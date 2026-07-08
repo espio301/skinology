@@ -1,11 +1,15 @@
 import { categories } from '../data/mockData';
 
-export default function FilterBar() {
+export default function FilterBar({ activeCategory, setActiveCategory }) {
   return (
     <div className="filter-bar-container">
       <div className="filter-pills">
         {categories.map((cat, idx) => (
-          <button key={idx} className={`filter-pill ${idx === 0 ? 'active' : ''}`}>
+          <button 
+            key={idx} 
+            className={`filter-pill ${activeCategory === cat ? 'active' : ''}`}
+            onClick={() => setActiveCategory(cat)}
+          >
             {cat}
           </button>
         ))}
