@@ -7,7 +7,7 @@ class Article(models.Model):
     Linked to ingredients to provide evidence for their efficacy.
     """
     title = models.CharField(max_length=500)
-    url = models.URLField(max_length=1000, unique=True)
+    url = models.URLField(max_length=1000, blank=True, null=True)
     source = models.CharField(
         max_length=200,
         blank=True,

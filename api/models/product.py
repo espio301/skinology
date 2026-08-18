@@ -21,6 +21,20 @@ class Product(models.Model):
         ('other', 'Other'),
     ]
 
+    STRENGTH_CHOICES = [
+        ('ultra_gentle', 'Ultra-Gentle'),
+        ('gentle', 'Gentle'),
+        ('moderate', 'Moderate'),
+        ('potent', 'Potent'),
+        ('clinical', 'Clinical'),
+    ]
+
+    PH_CONFIDENCE_CHOICES = [
+        ('high', 'High'),
+        ('medium', 'Medium'),
+        ('low', 'Low'),
+    ]
+
     name = models.CharField(max_length=400)
     brand = models.CharField(max_length=200, db_index=True)
     slug = models.SlugField(max_length=500, unique=True, blank=True)
@@ -37,10 +51,35 @@ class Product(models.Model):
         blank=True,
         help_text='Average pH level of the product'
     )
+    ph_confidence = models.CharField(
+        max_length=10,
+        choices=PH_CONFIDENCE_CHOICES,
+        blank=True,
+        default='',
+        help_text='Confidence level of the pH estimate: high, medium, or low'
+    )
+    strength = models.CharField(
+        max_length=20,
+        choices=STRENGTH_CHOICES,
+        blank=True,
+        default='',
+        db_index=True,
+        help_text='Estimated product potency tier'
+    )
     raw_inci = models.JSONField(
         default=list,
         blank=True,
         help_text='Full ordered INCI ingredient list as scraped'
+    )
+    review_rating = models.FloatField(
+        null=True,
+        blank=True,
+        help_text='Average review rating (e.g. 4.8)'
+    )
+    review_count = models.IntegerField(
+        null=True,
+        blank=True,
+        help_text='Number of reviews (e.g. 1488)'
     )
     concerns = models.ManyToManyField(
         'SkinConcern',

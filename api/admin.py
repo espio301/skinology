@@ -3,6 +3,7 @@ from api.models import (
     Product, Ingredient, IngredientUmbrella, SkinConcern,
     ProductIngredient, Retailer, RetailerListing,
     UserProfile, Routine, RoutineItem, ClickEvent, Article,
+    IngredientConcernEvidence,
 )
 
 
@@ -15,6 +16,12 @@ class ProductIngredientInline(admin.TabularInline):
 class RetailerListingInline(admin.TabularInline):
     model = RetailerListing
     extra = 1
+
+
+class EvidenceInline(admin.TabularInline):
+    model = IngredientConcernEvidence
+    extra = 0
+    readonly_fields = ['pubmed_count', 'evidence_tier', 'last_queried', 'query_used']
 
 
 @admin.register(Product)
@@ -31,7 +38,8 @@ class ProductAdmin(admin.ModelAdmin):
 class IngredientAdmin(admin.ModelAdmin):
     list_display = ['inci_name', 'common_name']
     search_fields = ['inci_name', 'common_name']
-    filter_horizontal = ['umbrellas', 'concerns_supported']
+    filter_horizontal = ['umbrellas']
+    inlines = [EvidenceInline]
 
 
 @admin.register(IngredientUmbrella)
@@ -44,6 +52,14 @@ class IngredientUmbrellaAdmin(admin.ModelAdmin):
 class SkinConcernAdmin(admin.ModelAdmin):
     list_display = ['label', 'internal_key']
     search_fields = ['label', 'internal_key']
+
+
+@admin.register(IngredientConcernEvidence)
+class IngredientConcernEvidenceAdmin(admin.ModelAdmin):
+    list_display = ['ingredient', 'concern', 'evidence_tier', 'pubmed_count', 'last_queried']
+    list_filter = ['evidence_tier', 'concern']
+    search_fields = ['ingredient__inci_name', 'concern__label']
+    readonly_fields = ['query_used']
 
 
 @admin.register(Retailer)
@@ -86,3 +102,4 @@ class ArticleAdmin(admin.ModelAdmin):
     list_display = ['title', 'source', 'published_date']
     search_fields = ['title', 'summary']
     filter_horizontal = ['ingredients']
+

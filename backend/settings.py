@@ -177,3 +177,18 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
+
+
+# ==============================================================================
+# PUBMED / NCBI E-UTILITIES
+# ==============================================================================
+
+NCBI_API_KEY = ''  # Register free at https://www.ncbi.nlm.nih.gov/account/
+NCBI_ESEARCH_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi'
+PUBMED_REQUEST_DELAY = 0.35  # seconds between requests (use 0.1 with API key)
+PUBMED_EVIDENCE_THRESHOLDS = {
+    'well_founded': 200,   # ≥200 articles → green
+    'studied': 50,         # 50–199 articles → yellow
+    # <50 articles → orange (prospective)
+}
+

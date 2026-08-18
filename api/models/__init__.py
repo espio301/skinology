@@ -1,5 +1,6 @@
 from .ingredient import Ingredient, IngredientUmbrella
 from .concern import SkinConcern
+from .evidence import IngredientConcernEvidence
 from .product import Product, ProductIngredient
 from .retailer import Retailer, RetailerListing
 from .user import UserProfile
@@ -10,6 +11,7 @@ from .article import Article
 __all__ = [
     'Ingredient', 'IngredientUmbrella',
     'SkinConcern',
+    'IngredientConcernEvidence',
     'Product', 'ProductIngredient',
     'Retailer', 'RetailerListing',
     'UserProfile',

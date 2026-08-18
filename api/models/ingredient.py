@@ -44,6 +44,11 @@ class Ingredient(models.Model):
         blank=True,
         help_text='List of alternate names for synonym resolution'
     )
+    pubmed_terms = models.JSONField(
+        default=list,
+        blank=True,
+        help_text='PubMed search fragments, e.g. [{"term": "Caffeine", "field": "Mesh"}, {"term": "caffeine", "field": "tiab"}]'
+    )
     umbrellas = models.ManyToManyField(
         IngredientUmbrella,
         related_name='ingredients',
@@ -52,9 +57,9 @@ class Ingredient(models.Model):
     )
     concerns_supported = models.ManyToManyField(
         'SkinConcern',
+        through='IngredientConcernEvidence',
         related_name='supporting_ingredients',
         blank=True,
-        help_text='Skin concerns this ingredient helps address'
     )
 
     class Meta:

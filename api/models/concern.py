@@ -17,7 +17,25 @@ class SkinConcern(models.Model):
         unique=True,
         help_text='Internal key for backend logic, e.g. "rosacea"'
     )
+    parent = models.ForeignKey(
+        'self',
+        null=True,
+        blank=True,
+        on_delete=models.CASCADE,
+        related_name='children',
+        help_text='Parent concern for sub-concern hierarchy'
+    )
     description = models.TextField(blank=True, default='')
+    pubmed_terms = models.JSONField(
+        default=list,
+        blank=True,
+        help_text='PubMed search terms, e.g. [{"term": "Skin Aging", "field": "Mesh"}, {"term": "photoaging", "field": "tiab"}]'
+    )
+    pubmed_excluders = models.JSONField(
+        default=list,
+        blank=True,
+        help_text='PubMed exclusion terms, e.g. [{"term": "Alopecia", "field": "Mesh"}, {"term": "hair", "field": "tiab"}]'
+    )
 
     class Meta:
         ordering = ['label']

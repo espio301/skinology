@@ -28,6 +28,26 @@ export const getProduct = async (slug) => {
   }
 };
 
+export const getUmbrellas = async () => {
+  try {
+    const response = await api.get('umbrellas/');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching umbrellas:', error);
+    throw error;
+  }
+};
+
+export const getConcerns = async () => {
+  try {
+    const response = await api.get('concerns/');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching concerns:', error);
+    throw error;
+  }
+};
+
 export const trackAffiliateClick = async (productId, listingId, sourcePage = '') => {
   try {
     const response = await api.post('events/click/', {
@@ -38,6 +58,26 @@ export const trackAffiliateClick = async (productId, listingId, sourcePage = '')
     return response.data;
   } catch (error) {
     console.error('Error tracking click:', error);
+    throw error;
+  }
+};
+
+export const getIngredients = async (params = {}) => {
+  try {
+    const response = await api.get('ingredients/', { params });
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching ingredients:', error);
+    throw error;
+  }
+};
+
+export const getIngredient = async (id) => {
+  try {
+    const response = await api.get(`ingredients/${id}/`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching ingredient detail:', error);
     throw error;
   }
 };
