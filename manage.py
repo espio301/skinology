@@ -6,6 +6,11 @@ import sys
 
 def main():
     """Run administrative tasks."""
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    sys.path.insert(0, base_dir)
+    venv_site = os.path.join(base_dir, '.venv', 'lib', 'python3.9', 'site-packages')
+    if os.path.exists(venv_site) and venv_site not in sys.path:
+        sys.path.insert(0, venv_site)
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
     try:
         from django.core.management import execute_from_command_line

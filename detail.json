@@ -1,0 +1,258 @@
+=== PRODUCT DETAIL JSON KEYS ===
+{
+  "data": {
+    "product_id": "UA71026007",
+    "sell_stat_code": "10",
+    "sku": "8809013342402",
+    "slug": "aestura-atobarrier365-cream-2-70-fl-oz-80ml",
+    "name": "AESTURA Atobarrier365 Cream 2.70 fl.oz. (80ml)",
+    "description": "\n",
+    "product_type": "STANDARD",
+    "brand": {
+      "id": "B00587",
+      "name": "AESTURA",
+      "slug": "aestura",
+      "url": "/brands/B00587",
+      "logo_url": "https://use-image.oliveyoung.com/images/prd/B00587/logo/40e26e00-260f-4e31-aee6-d65404e42fa4.png"
+    },
+    "display_category": {
+      "id": "D010103",
+      "name": "Face Creams",
+      "slug": "face-creams"
+    },
+    "display_category_hierarchy": {
+      "large": {
+        "id": "D01",
+        "name": "Skincare",
+        "slug": "skincare"
+      },
+      "medium": {
+        "id": "D0101",
+        "name": "Moisturizers",
+        "slug": "moisturizers"
+      },
+      "small": {
+        "id": "D010103",
+        "name": "Face Creams",
+        "slug": "face-creams"
+      }
+    },
+    "pricing": {
+      "price": {
+        "amount": 28.8,
+        "currency": "USD",
+        "formatted": "$28.80"
+      },
+      "original_price": {
+        "amount": 32,
+        "currency": "USD",
+        "formatted": "$32.00"
+      },
+      "discount_rate": 10,
+      "discount_amount": {
+        "amount": 3.1999999999999993,
+        "currency": "USD",
+        "formatted": "$3.20"
+      },
+      "currency": "USD",
+      "sale_price": {
+        "amount": 28.8,
+        "formatted": "$28.80"
+      },
+      "discount": {
+        "type": "PERCENTAGE",
+        "value": 10,
+        "label": "Save 10%"
+      },
+      "sale_price_min": 28.8,
+      "sale_price_max": 28.8,
+      "original_price_min": 32,
+      "original_price_max": 32
+    },
+    "inventory": {
+      "stock_count": 170,
+      "is_soldout": false,
+      "availability": "IN_STOCK",
+      "low_stock_threshold": 10
+    },
+    "tax_info": {
+      "tax_code": "PH400882",
+      "tax_category": "STANDARD"
+    },
+    "thumbnail": {
+      "url": "https://use-image.oliveyoung.com/images/prd/8809013342402/thumbnail/79f2f3bd-61be-45c5-bfb8-ac8d64e85428.png",
+      "alt": "AESTURA Atobarrier365 Cream 2.70 fl.oz. (80ml)"
+    },
+    "medias": [
+      {
+        "alt": "",
+        "url": "https://use-image.oliveyoung.com/images/prd/8809013342402/thumbnail/79f2f3bd-61be-45c5-bfb8-ac8d64e85428.png",
+        "type": "IMAGE",
+        "sort_order": 1
+      }
+    ],
+    "badges": [
+      {
+        "type": "NEW",
+        "label": "NEW",
+        "color": "#10B981",
+        "priority": 3
+      },
+      {
+        "type": "SALE",
+        "label": "10% OFF",
+        "color": "#D97706",
+        "priority": 4
+      }
+    ],
+    "detail_sections": [
+      {
+        "id": "selling-point",
+        "sort_order": 0,
+        "title": "Selling Point",
+        "type": "TEXT",
+        "content": "\n"
+      },
+      {
+        "id": "why-we-love",
+        "sort_order": 1,
+        "title": "Why We Love It",
+        "type": "TEXT",
+        "content": "AESTURA is the brand in Korea for sensitive skin. It is suitable for use after microneedling treatments and reduces visible redness, and visible roughness.\n"
+      },
+      {
+        "id": "how-to-use",
+        "sort_order": 2,
+        "title": "How To Use",
+        "type": "TEXT",
+        "content": "Apply evenly onto clean skin AM & PM, after toner and serum. Visible ceramide capsules melt softly upon application. Gently smooth and press into the skin for better absorption."
+      }
+    ],
+    "tech_spec_info": {
+      "type": "2",
+      "images": [
+        {
+          "seq": 1,
+          "url": "https://use-image.oliveyoung.com/images/prd/temp-fb927be8-bf6c-4e05-af07-0ae61f1347b2/detail/462ac3ec-3cb4-4dd8-be7e-527a1d53e6c1.webp",
+          "full_url": "https://use-image.oliveyoung.com/images/prd/temp-fb927be8-bf6c-4e05-af07-0ae61f1347b2/detail/462ac3ec-3cb4-4dd8-be7e-527a1d53e6c1.webp"
+        },
+        {
+          "seq": 2,
+          "url": "https://use-image.oliveyoung.com/images/prd/temp-cdafa5d4-2c53-45b9-8a9f-f9ca90c8624d/detail/21978d86-9f2b-47e7-8f15-2d702770f0e5.webp",
+          "full_url": "https://use-image.oliveyoung.com/images/prd/temp-cdafa5d4-2c53-45b9-8a9f-f9ca90c8624d/detail/21978d86-9f2b-47e7-8f15-2d702770f0e5.webp"
+        },
+        {
+          "seq": 3,
+          "url": "https://use-image.oliveyoung.com/images/prd/temp-cdafa5d4-2c53-45b9-8a9f-f9ca90c8624d/detail/da0b6419-1069-49af-9a5a-f8b7a1d9d431.webp",
+          "full_url": "https://use-image.oliveyoung.com/images/prd/temp-cdafa5d4-2c53-45b9-8a9f-f9ca90c8624d/detail/da0b6419-1069-49af-9a5a-f8b7a1d9d431.webp"
+        },
+        {
+          "seq": 4,
+          "url": "https://use-image.oliveyoung.com/images/prd/temp-cdafa5d4-2c53-45b9-8a9f-f9ca90c8624d/detail/60c1acf6-5061-484a-b23c-566541eb361c.webp",
+          "full_url": "https://use-image.oliveyoung.com/images/prd/temp-cdafa5d4-2c53-45b9-8a9f-f9ca90c8624d/detail/60c1acf6-5061-484a-b23c-566541eb361c.webp"
+        },
+        {
+          "seq": 5,
+          "url": "https://use-image.oliveyoung.com/images/prd/temp-ab8f3a61-1ecc-456f-8274-a27b6b7b3a83/detail/62931ed1-063e-43e1-be96-b504e2edb221.jpg",
+          "full_url": "https://use-image.oliveyoung.com/images/prd/temp-ab8f3a61-1ecc-456f-8274-a27b6b7b3a83/detail/62931ed1-063e-43e1-be96-b504e2edb221.jpg"
+        }
+      ],
+      "html_content": "",
+      "prdt_dtl_gen_type": "2002"
+    },
+    "has_variants": false,
+    "use_color_chip": false,
+    "attributes": {
+      "product_info_en": "A dermatologist-tested, non-comedogenic, rich cream that supports and nourishes skin while delivering up to 120 hours of hydration.",
+      "product_name_en": "AESTURA Atobarrier365 Cream 2.70 fl.oz. (80ml)",
+      "search_keywords": ""
+    },
+    "physical_attributes": {
+      "weight": {
+        "value": 113,
+        "unit": "g"
+      },
+      "dimensions": {
+        "width": 52,
+        "height": 143,
+        "depth": 42,
+        "unit": "mm"
+      }
+    },
+    "manufacturing": {
+      "manufacturer": "AMOREPACIFIC CORPORATION",
+      "country_of_origin": "Korea, Republic of"
+    },
+    "created_at": "2026-07-30T01:57:14.729Z",
+    "updated_at": "2026-08-11T20:52:31.096Z",
+    "stock_count": 170,
+    "is_soldout": false,
+    "is_new": true,
+    "is_best": false,
+    "is_hotdeal": false,
+    "is_only": false,
+    "is_displayed": true,
+    "is_real_data": true,
+    "skus": [
+      {
+        "sku_id": "1023KRPFE7BR",
+        "product_id": "UA71026007",
+        "sku": "8809013342402",
+        "name": "AESTURA Atobarrier365 Cream 2.70 fl.oz. (80ml)",
+        "item_id": "5689",
+        "pricing": {
+          "price": {
+            "amount": 28.8,
+            "currency": "USD",
+            "formatted": "$28.80"
+          },
+          "original_price": {
+            "amount": 32,
+            "currency": "USD",
+            "formatted": "$32.00"
+          }
+        },
+        "inventory": {
+          "stock_count": 170,
+          "is_soldout": false,
+          "availability": "IN_STOCK",
+          "low_stock_threshold": 10
+        },
+        "sell_stat_code": "10",
+        "is_displayed": true,
+        "attributes": {
+          "gtin": "8809013342402",
+          "option": "AESTURA Atobarrier365 Cream 2.70 fl.oz. (80ml)",
+          "g1ItemId": "5689"
+        },
+        "is_representative": true,
+        "images": [],
+        "sort_order": 1,
+        "tax_info": {
+          "tax_code": "PH400882",
+          "tax_category": "STANDARD"
+        },
+        "price": {
+          "amount": 28.8,
+          "currency": "USD",
+          "formatted": "$28.80"
+        },
+        "original_price": {
+          "amount": 32,
+          "currency": "USD",
+          "formatted": "$32.00"
+        },
+        "stock_count": 170,
+        "is_soldout": false,
+        "color_chip_images": []
+      }
+    ],
+    "item_id": "5689"
+  },
+  "_meta": {
+    "revision": "product-UA71026007",
+    "cache_ttl_sec": 600,
+    "trace_id": "req-f27d2960-a827-4f5d-b759-b27426f16101",
+    "took_ms": 60
+  }
+}
